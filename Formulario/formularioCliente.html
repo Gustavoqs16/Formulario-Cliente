@@ -1,0 +1,167 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estiloForm.css">
+
+                <!-- Adicionando JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+                 <!-- Adicionando Javascript -->
+     <script type="text/javascript" src="form.js"></script>
+
+    </head>
+
+    <title>Formulario Cliente</title>
+
+    <body>
+        
+        <header> 
+            <div id="titleSite">Formulario Cliente - Zero TI</div> 
+        </header>
+
+    <nav>
+
+
+        <!--Seção do Cliente-->
+        <div id="cliente">
+            <section>
+                <h2>Identificação do Cliente</h2>
+        
+                <form action="." method="GET"> <!--(action) pagina que contem o script de envio-->
+                    <table border="0">
+                        
+                    <tr><td width="10%">
+                    <label>Razão Social: </td><td> <input type="text" name="razao" placeholder="Digite a razão social"> </label><br>
+                    </td></tr>
+
+                    <tr><td>
+                    <label>Nome: </td><td> 
+                        <input type="text" name="nome" placeholder="Digite seu nome"> </label><br>
+                    </tr></td>
+                    
+                    <tr><td>
+                    <label>E-mail: </td><td> 
+                        <input type="email" name="email" placeholder="Digite o seu E-mail" 
+                        data-error="Por favor, informe um e-mail correto." required="required"> </label><br>
+                    </td></tr>
+
+                    <tr><td>
+                        <!--cnpj, mascara de cnpj-->
+                        <label for="cnpj"> CNPJ <span class="required">*</span> </td><td> </label> 
+                        <input type="text" name="cnpj" onkeydown="javascript: fMasc( this, mCNPJ );" pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" placeholder="99.999.999/9999-99" maxlength="18">
+                    </td></tr>
+
+                    <tr><td>
+                    <!--Telefone com formato Brasileiro, foi utilizado mascara para telefone javaScript-->
+                    <label for="phone">Telefone <span class="required">*</span> </td><td> </label>
+                    <input type="text" class="form-control" id="phone" name="phone" onkeydown="javascript: fMasc( this, mTel );" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))([9]{1})?([0-9]{4})-([0-9]{4})"
+                    title="Número de telefone precisa ser no formato (99) 9999-9999" required="required" maxlength="15" />
+                    </td></tr>
+
+                    </table>
+                
+
+                <br>
+                <br>
+                <br>
+
+            </section>
+        </div>
+    <!--Fim secão Identificação do cliente-->      
+        
+    
+    <!--Seção de endereço do cliente-->
+        <div id="endereco">
+            <section>
+
+                <h2>Endereço do Cliente</h2>
+
+                
+                    <table border="0">
+
+                        <tr><td width="10%">
+                        <label>Cep: </td><td>
+                        <input name="cep" type="text" id="cep" value="" maxlength="9" placeholder="Digite o seu cep"/></label><br />
+                        </td></tr>
+
+                        <tr><td>
+                        <label>Rua: </td><td>
+                        <input name="rua" type="text" id="rua"  placeholder="Digite o nome da rua" /></label><br />
+                        </td></tr>
+
+                        <tr><td>
+                        <label>Número: </td><td>
+                        <input name="numero" type="number" id="numero" size="2" placeholder="Digite o numero" /></label><br />
+                        </td></tr>
+
+                        <tr><td>
+                        <label>Bairro: </td><td>
+                        <input name="bairro" type="text" id="bairro" size="30" placeholder="Digite o bairro"/></label><br />
+                        </td></tr>
+
+                        <tr><td>
+                        <label>Cidade: </td><td>
+                        <input name="cidade" type="text" id="cidade" size="30" placeholder="Digite a cidade"/></label><br />
+                        </td></tr>
+
+                        <tr><td>
+                        <label>Estado: </td><td>
+                        <input name="uf" type="text" id="uf" size="2" placeholder="UF"/></label><br />
+                        </td></tr>
+     
+                    </table>
+                
+
+                    <br>
+                    <br>
+                    <br>
+
+            </section>
+        </div>
+    <!--Fim seção endereço-->
+
+    <!--Secão Opinião/Contato-->
+        <div id="opiniao">
+                    <h2>Deixe sua opiniao</h2>
+
+                        <p>
+                            Assunto: <input type="text" name="assunto" placeholder="Digite o assunto"><br><br>
+                            <textarea name="opiniao" id="" cols="50" rows="10" placeholder="Deixe aqui a sua opinião, mensagem ou sugestão!"></textarea>
+                            </p>
+
+
+                    <tr><td>
+                        <!--Botoes de envio e reset-->
+                        <input type="submit" name="enviar" value="Enviar">
+                        </td><td>
+                        <input type="reset" name="reset" value="Limpa Dados">
+                        </tr></td>
+            
+                </form>
+            </section>
+
+            
+
+        </div><br>
+    <!--Fim secão opinião/contato-->
+
+    </nav>
+    <!--Fim Formulario-->
+
+
+        <footer>
+            <div id="meusDados">
+                <p>
+                    Telefone celular: (41) 9.9288-9735 <br> <br>           
+                    Linkedin: www.linkedin.com/in/gustavo-souza-52863a1a2/ <br> <br>        
+                    E-mail: gustavo_qs16@hotmail.com
+                </p>
+            </div>
+        </footer>
+
+       
+
+    </body>
+</html>

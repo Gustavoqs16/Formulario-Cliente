@@ -1,0 +1,72 @@
+header{
+    background: rgba(0, 247, 255, 0.459);
+    position: relative;
+    height: 55px;
+    border: none;
+    border-radius: 0px 0px 70px 70px ;
+}
+#titleSite{
+    position: relative;
+    font-size: 40px;
+    font-style: inherit;
+    color: white;
+    left:450px
+}
+
+nav{
+    background:  rgba(0, 247, 255, 0.459);
+    position: relative;
+    height: 420%px;
+    width: 42%;
+    left: 2%;
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 50 round; 
+    transform: translate(10px, 12px);
+}
+
+
+
+
+body{
+    background-color: rgb(3, 51, 155);
+    color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+footer{
+    background:  rgba(0, 247, 255, 0.459);
+    border: none;
+    border-radius: 70px 70px 0px 0px; 
+}
+
+#cliente{
+    position: relative;
+    font-style: italic;
+    color: white;
+    left: 15%;
+}
+
+#endereco{
+    position: relative;
+    font-style: italic;
+    color: white;
+    left: 15%;
+}
+
+#opiniao{
+    position: relative;
+    font-style: italic;
+    color: white;
+    left: 15%;
+}
+
+
+#meusDados{
+    position: relative;
+    font-style: italic;
+    color: white;
+    left: 35%;
+
+}
